@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dhai05cx2jf5b"
+path="res://.godot/imported/Mosquito 4.mp3-cc452a42f9ba00edfa699f53f5aa3f73.mp3str"
+
+[deps]
+
+source_file="res://Distractions/Mosquito/(Unused)/Mosquito 4.mp3"
+dest_files=["res://.godot/imported/Mosquito 4.mp3-cc452a42f9ba00edfa699f53f5aa3f73.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

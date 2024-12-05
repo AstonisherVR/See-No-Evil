@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bwjrk88rkb7j5"]
+
+[ext_resource type="Texture2D" uid="uid://byjyopu5kfnim" path="res://Enemies/Vehicle Creature/Car.png" id="1_47k2y"]
+
+[node name="Vroom Vroom" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 2
+texture = ExtResource("1_47k2y")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]

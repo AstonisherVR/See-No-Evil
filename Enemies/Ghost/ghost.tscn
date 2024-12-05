@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://citcnxn1vgkmg"]
+
+[ext_resource type="Script" path="res://Enemies/Ghost/ghost.gd" id="1_ryq8u"]
+[ext_resource type="Script" path="res://enemy_resource.gd" id="2_v877q"]
+[ext_resource type="AudioStream" uid="uid://dhtkuv06palub" path="res://Enemies/Ghost/Horror Monster - Ghost Ambience Theme V1.wav" id="3_2yu3l"]
+[ext_resource type="Texture2D" uid="uid://x6rs5x7w8wya" path="res://Enemies/Ghost/Ghost.png" id="3_yl12o"]
+
+[sub_resource type="Resource" id="Resource_f2vbn"]
+script = ExtResource("2_v877q")
+enemy_name = "Ghost"
+enemy_speed = 15.0
+enemy_damage = 0.0
+enemy_threat_level = 9
+enemy_is_hostle = true
+enemy_is_attacking = true
+enemy_insta_kill = true
+
+[node name="Ghost" type="Node3D"]
+script = ExtResource("1_ryq8u")
+enemy_resource = SubResource("Resource_f2vbn")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 2
+texture = ExtResource("3_yl12o")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_2yu3l")

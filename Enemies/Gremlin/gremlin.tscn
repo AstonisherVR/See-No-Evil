@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://clj2g5lr6y68p"]
+
+[ext_resource type="Texture2D" uid="uid://btjn4ey8ego7m" path="res://Enemies/Gremlin/Gremlin.png" id="1_brdap"]
+
+[node name="Gremlin" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+modulate = Color(0.535107, 0.404868, 1, 1)
+billboard = 2
+texture = ExtResource("1_brdap")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]

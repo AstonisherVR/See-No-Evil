@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://6vqeii8tput7"]
+
+[ext_resource type="Script" path="res://Enemies/Stranger/stranger.gd" id="1_d6ua0"]
+[ext_resource type="Script" path="res://enemy_resource.gd" id="2_fkyt3"]
+[ext_resource type="Texture2D" uid="uid://di12ym7fhch8k" path="res://Enemies/Stranger/Stranger.png" id="3_o61j2"]
+
+[sub_resource type="Resource" id="Resource_cebmo"]
+resource_local_to_scene = true
+script = ExtResource("2_fkyt3")
+enemy_name = "Stranger"
+enemy_speed = 10.0
+enemy_damage = 0.0
+enemy_threat_level = 0
+enemy_is_hostle = true
+enemy_is_attacking = true
+enemy_insta_kill = false
+
+[node name="Stranger" type="Node3D"]
+script = ExtResource("1_d6ua0")
+enemy_resource = SubResource("Resource_cebmo")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+modulate = Color(1, 0.59, 0.59, 1)
+billboard = 2
+texture = ExtResource("3_o61j2")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
