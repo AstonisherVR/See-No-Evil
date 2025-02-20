@@ -17,7 +17,7 @@ var footstep_number: int
 
 const FOOTSTEPS_BASE_VOLUME = -35
 
-func _ready() -> void: 
+func _ready() -> void:
 	footsteps_sfx.volume_db = FOOTSTEPS_BASE_VOLUME
 
 func _physics_process(delta: float) -> void:
@@ -37,7 +37,7 @@ func handle_movement(delta: float) -> void:
 	handle_footsteps(is_running)
 
 func handle_footsteps(is_running: bool) -> void:
-	# If the volume gets above FOOTSTEPS_BASE_VOLUME(-25), it makes sure the the volume stays at FOOTSTEPS_BASE_VOLUME(-25) 
+	# If the volume gets above FOOTSTEPS_BASE_VOLUME(-25), it makes sure the the volume stays at FOOTSTEPS_BASE_VOLUME(-25)
 	footsteps_sfx.volume_db = min(footsteps_sfx.volume_db, FOOTSTEPS_BASE_VOLUME)
 	#If the player is moving, things happned
 	if abs(velocity.length()) > 0:
